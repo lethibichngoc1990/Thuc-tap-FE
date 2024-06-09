@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <h1>Login</h1>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="x@vitalus-for-NAEP" type="text" 
+            autocomplete="off" id="input1" name="input1" [(ngModel)]="username"  [ngModelOptions]="{standalone: true}" required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" [(ngModel)]="password"  [ngModelOptions]="{standalone: true}" required/>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="onButtonClick()">Log in</button>
+</div>
